@@ -7,9 +7,11 @@ Installation:
 go get github.com/Financial-Times/up-transformer-dumper
 ```
 
-Example:
+Examples:
 
 ```
-up-transformer-dumper -listEndpoint http://ftaps39395-law1b-eu-t/transformers/organisations/ >/tmp/orgsdump.json^C
+up-transformer-dumper -listEndpoint http://ftaps39395-law1b-eu-t/transformers/organisations/ >/tmp/orgsdump.json
+up-transformer-dumper -listEndpoint http://ftaps50665-law1a-eu-t/transformers/memberships/ >/tmp/membershipsdump.json
+up-transformer-dumper -listEndpoint http://ftaps50665-law1a-eu-t/transformers/roles/ >/tmp/rolesdump.json
 
 ```
