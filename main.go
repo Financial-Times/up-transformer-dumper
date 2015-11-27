@@ -95,8 +95,6 @@ func fetchMessages(messages chan<- string, urls <-chan string) {
 		}
 		messages <- string(data)
 	}
-
-	close(messages)
 }
 
 var httpClient = &http.Client{
